@@ -1,11 +1,11 @@
-#Power_Panel_01
+#Power_Panel_02
 #code By Steven Lipton
 
 from tkinter import *
 
 #make the window
 root=Tk()
-root.title('Power Panel #1')
+root.title('Power Panel #2')
 
 #make the frame
 frame = Frame(root)
@@ -32,9 +32,20 @@ def onOffButtonPressed():
 onOff_button_title = StringVar()        
 onOff_button_title.set('Off')
 onOff_button = Button(frame, command = onOffButtonPressed)
-onOff_button.grid(row = 2, column = 0, rowspan=2, columnspan = 2,sticky = SW + NE)
+onOff_button.grid(row = 2, column = 4, rowspan=2, columnspan = 2,sticky = SW + NE)
 onOff_button.configure(background = 'blue')
 onOff_button.configure(textvariable = onOff_button_title)
+
+#new code for image lesson
+
+#make another button
+bitmap_Button = Button(frame)
+bitmap_Button.grid(row=2, column = 3)
+bitmap_Button.configure(text = 'info')
+
+image_button = Button(frame)
+image_button.grid(row=2 column = 4)
+
 
 #render Labels
 voltage_label = Label(frame, text = 'Voltage')
