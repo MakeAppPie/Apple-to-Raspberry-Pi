@@ -40,11 +40,16 @@ button_Image = PhotoImage(file = 'button_3.gif')
 button_4.configure(image = button_Image)
 
 #button 5 -- image button (round rect)
-button_4 = Button(frame, text = 'Ok')
-button_4.grid(column = 3 , row = 0) 
+button_5 = Button(frame, text = 'Ok')
+button_5.grid(column = 3 , row = 0) 
 button_Image = PhotoImage(file = 'button_3.gif')
-button_4.configure(image = button_Image)
+button_5.configure(image = button_Image)
 
+#button 6 -- a special gift
+button_5 = Button(frame, text = 'Ok')
+button_5.grid(column = 4 , row = 0) 
+button_Image_2 = PhotoImage(file = 'glossy button.gif')
+button_5.configure(image = button_Image_2)
 
 # --- main loop
 
