@@ -26,20 +26,24 @@ button_1.grid(column = 0 , row = 0)
 #button_2 -- basic flat button
 button_2 = Button(frame, text = 'Ok',relief = FLAT)
 button_2.grid(column = 1 , row = 0)
+button_2.configure(fg='blue',font=('Sans','18','bold'))
 
-#button 2 -- bitmap button
+#button 3 -- bitmap button
 button_3 = Button(frame, text = 'Ok')
 button_3.grid(column = 2 , row = 0)
 button_3.configure(bitmap = 'info')
 
-#button 3 -- image button
-button_3 = Button(frame, text = 'Ok')
-button_3.grid(column = 3 , row = 0) 
+#button 4 -- image button (round button)
+button_4 = Button(frame, text = 'Ok')
+button_4.grid(column = 3 , row = 0) 
 button_Image = PhotoImage(file = 'button_3.gif')
-button_3.configure(image = button_Image)
+button_4.configure(image = button_Image)
 
-
-
+#button 5 -- image button (round rect)
+button_4 = Button(frame, text = 'Ok')
+button_4.grid(column = 3 , row = 0) 
+button_Image = PhotoImage(file = 'button_3.gif')
+button_4.configure(image = button_Image)
 
 
 # --- main loop
