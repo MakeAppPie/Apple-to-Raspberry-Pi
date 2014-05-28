@@ -26,6 +26,7 @@ poppers_penguins_02.py			Added comboxes and a dialog box.
 MVC_template_01.py				A template for MVC(model view controller)
 MVC_template_example			An example of the MVC template
 poppers_penguins_MVC_01			Re-organized version of poppers_penguins_02 to 
-								follow the MVC template. View And controller implemented.	
+								follow the MVC template. View And controller implemented.
+poppers_penguins_MVC_02			Added Model with delegates 	
 			
              
